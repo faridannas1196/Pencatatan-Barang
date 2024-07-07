@@ -1,0 +1,81 @@
+.bg{
+  background-color: darkblue;
+}
+
+h1{
+  
+}
+
+#title{
+  font-style: oblique;
+}
+
+.form-label {
+  text-align: left;
+}
+.form-outline {
+  text-align: left;
+}
+.btn-block {
+  width: 100%;
+}
+
+#loginclick{
+  background-color: darkblue;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  transition: transform 0.3s ease;
+}
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+.sidebar .nav-link {
+  color: white;
+}
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.fontcollor{
+  color: darkblue;
+}
+
+.isi{
+  border-radius: 9px;
+  height: 500px;
+}
+
+.nav-link {
+  color: blue; /* Warna ikon tidak diklik */
+  background-color: white; /* Tidak ada latar belakang */
+}
+
+.nav-link i {
+  color: blue; /* Warna ikon tidak diklik */
+}
+
+.logouticon{
+  margin-top: 300px;
+}
+
+.nav-link.watr, .nav-link:hover {
+  background-color: darkblue; /* Warna latar belakang saat diklik atau hover */
+  color: white; /* Warna teks saat diklik atau hover */
+}
+
+.nav-link.watr i, .nav-link:hover i {
+  color: white; /* Warna ikon saat diklik atau hover */
+}
+
