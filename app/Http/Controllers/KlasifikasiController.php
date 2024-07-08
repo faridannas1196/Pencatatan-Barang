@@ -16,16 +16,13 @@ class KlasifikasiController extends Controller
 
     public function tambahKlasifikasi(Request $request)
     {
-        // Validate the request
         $request->validate([
             'nama_klasifikasi' => 'required|string|max:255',
         ]);
 
-        // Create a new classification
         KlasifikasiModel::create([
             'nama_klasifikasi' => $request->nama_klasifikasi,
         ]);
-        // Flash the success message to the session
         return redirect()->route('klasifikasi')->with('message', 'Klasifikasi Ditambahkan');
     }
 
@@ -37,15 +34,12 @@ class KlasifikasiController extends Controller
 
     public function update(Request $request, $id)
 {
-    // Validate the request
     $request->validate([
         'nama_klasifikasi' => 'required|string|max:255',
     ]);
 
-    // Find the klasifikasi
     $klasifikasi = KlasifikasiModel::findOrFail($id);
 
-    // Update the klasifikasi
     $klasifikasi->update([
         'nama_klasifikasi' => $request->nama_klasifikasi,
     ]);
