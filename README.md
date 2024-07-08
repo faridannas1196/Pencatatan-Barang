@@ -36,5 +36,6 @@ Relasi antara tabel `barang` dan `klasifikasi` adalah relasi satu ke banyak (one
 ### Instalasi
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/username/inventory-management-system.git
-   cd inventory-management-system
+   git clone https://github.com/faridannas1196/Pencatatan-Barang.git
+   cd Pencatatan-Barang
+   composer install
