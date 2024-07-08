@@ -31,11 +31,3 @@ Aplikasi ini menggunakan dua tabel utama dalam database:
 2. **Klasifikasi**: Tabel ini menyimpan data klasifikasi barang.
 
 Relasi antara tabel `barang` dan `klasifikasi` adalah relasi satu ke banyak (one-to-many). Setiap barang dapat memiliki satu klasifikasi, tetapi satu klasifikasi dapat dimiliki oleh banyak barang.
-
-## Cara Penggunaan
-### Instalasi
-1. Clone repositori ini:
-   ```bash
-   git clone https://github.com/faridannas1196/Pencatatan-Barang.git
-   cd Pencatatan-Barang
-   composer install
