@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Log;
 
 class BarangController extends Controller
 {
-    // Fungsi untuk menampilkan daftar barang
     public function barang(Request $request)
     {
         $klasifikasi_id = $request->input('klasifikasi_id');
@@ -75,11 +74,9 @@ class BarangController extends Controller
         $barang = BarangModel::findOrFail($id);
 
         if ($request->hasFile('foto_barang')) {
-            // Hapus foto lama jika ada
             if ($barang->foto_barang) {
                 Storage::disk('public')->delete($barang->foto_barang);
             }
-            // Upload foto baru
             $path = $request->file('foto_barang')->store('images', 'public');
             $validatedData['foto_barang'] = $path;
         }
