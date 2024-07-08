@@ -20,7 +20,7 @@
       height: 100%;
     }
     .nav-link.active {
-      background-color: darkblue; /* Ganti dengan warna yang Anda inginkan */
+      background-color: darkblue;
       color: white;
     }
 
@@ -49,7 +49,6 @@
     window.onunload = function () { null }; 
 
     CKEDITOR.replace( 'content' );
-    // Initialize tooltips
     document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(function (tooltipNode) {
       new bootstrap.Tooltip(tooltipNode)
     })
