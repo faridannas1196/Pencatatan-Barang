@@ -58,12 +58,12 @@ h1{
 }
 
 .nav-link {
-  color: blue; /* Warna ikon tidak diklik */
-  background-color: white; /* Tidak ada latar belakang */
+  color: blue; 
+  background-color: white; 
 }
 
 .nav-link i {
-  color: blue; /* Warna ikon tidak diklik */
+  color: blue; 
 }
 
 .logouticon{
@@ -71,11 +71,11 @@ h1{
 }
 
 .nav-link.watr, .nav-link:hover {
-  background-color: darkblue; /* Warna latar belakang saat diklik atau hover */
-  color: white; /* Warna teks saat diklik atau hover */
+  background-color: darkblue; 
+  color: white; 
 }
 
 .nav-link.watr i, .nav-link:hover i {
-  color: white; /* Warna ikon saat diklik atau hover */
+  color: white; 
 }
 
